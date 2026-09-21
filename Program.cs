@@ -80,7 +80,55 @@ public class Program
         string[] tipos = new string[MAX_SOLICITUDES];
         string[] descripciones = new string[MAX_SOLICITUDES];
         string[] prioridades = new string[MAX_SOLICITUDES];
+        int totalRegistrados = 0;
+        bool continuar = true;
+        while (continuar)
+        {
+            MostrarMenu();
+            string opcion = Console.ReadLine();
 
-        string codigo = ObtenerTextoValido("Ingrese código de estudiante (mín. 5 caract.): ", 5);
+            switch (opcion)
+            {
+                case "1":
+                    if (totalRegistrados < MAX_SOLICITUDES)
+                    {
+                        Console.WriteLine($"\n--- REGISTRO DE SOLICITUD N° {totalRegistrados + 1} ---");
+                        string codigo = ObtenerTextoValido("Ingrese código de estudiante (mín. 5 caract.): ", 5);
+                        string nombre = ObtenerTextoValido("Ingrese nombre del estudiante: ", 2);
+                        string tipo = ObtenerTipoConsulta();
+                        string descripcion = ObtenerTextoValido("Ingrese descripción breve de la consulta: ", 5);
+                        string prioridad = CalcularPrioridad(tipo);
+
+                        codigos[totalRegistrados] = codigo;
+                        nombres[totalRegistrados] = nombre;
+                        tipos[totalRegistrados] = tipo;
+                        descripciones[totalRegistrados] = descripcion;
+                        prioridades[totalRegistrados] = prioridad;
+
+                        totalRegistrados++;
+
+                        Console.WriteLine("\n¡Solicitud registrada con éxito!");
+                        MostrarResumen(codigo, nombre, tipo, descripcion, prioridad);
+                    }
+                    else
+                    {
+                        Console.WriteLine("\n[Límite alcanzado] Se han registrado las 3 solicitudes máximas de la sesión.");
+                    }
+                    break;
+
+                case "2":
+                    Console.WriteLine("\n=== RESUMEN DE TODAS LAS ATENCIONES REGISTRADAS ===");    
+                    break;
+
+                case "3":
+                    continuar = false;
+                    Console.WriteLine("\nSaliendo del sistema de Soporte Académico...");
+                    break;
+
+                default:
+                    Console.WriteLine("\n[Error] Opción inválida. Por favor, seleccione una opción válida.");
+                    break;
+            }
+	    }
 	}
 }
