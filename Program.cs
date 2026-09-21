@@ -45,7 +45,8 @@ public class Program
                 case "3": return "Constancia";
                 case "4": return "Plataforma";
                 case "5": return "Otro";
-                default: Console.WriteLine(" Opción inválida. Intente de nuevo."); break;
+                default: Console.WriteLine(" Opción inválida. Elija un número entre 1 y 5.");
+                break;
             }
         }
     }

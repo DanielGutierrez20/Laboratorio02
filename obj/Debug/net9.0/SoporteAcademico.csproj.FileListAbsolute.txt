@@ -1,0 +1,15 @@
+F:\Lab02\SoporteAcademico\bin\Debug\net9.0\SoporteAcademico.exe
+F:\Lab02\SoporteAcademico\bin\Debug\net9.0\SoporteAcademico.deps.json
+F:\Lab02\SoporteAcademico\bin\Debug\net9.0\SoporteAcademico.runtimeconfig.json
+F:\Lab02\SoporteAcademico\bin\Debug\net9.0\SoporteAcademico.dll
+F:\Lab02\SoporteAcademico\bin\Debug\net9.0\SoporteAcademico.pdb
+F:\Lab02\SoporteAcademico\obj\Debug\net9.0\SoporteAcademico.GeneratedMSBuildEditorConfig.editorconfig
+F:\Lab02\SoporteAcademico\obj\Debug\net9.0\SoporteAcademico.AssemblyInfoInputs.cache
+F:\Lab02\SoporteAcademico\obj\Debug\net9.0\SoporteAcademico.AssemblyInfo.cs
+F:\Lab02\SoporteAcademico\obj\Debug\net9.0\SoporteAcademico.csproj.CoreCompileInputs.cache
+F:\Lab02\SoporteAcademico\obj\Debug\net9.0\SoporteAcademico.sourcelink.json
+F:\Lab02\SoporteAcademico\obj\Debug\net9.0\SoporteAcademico.dll
+F:\Lab02\SoporteAcademico\obj\Debug\net9.0\refint\SoporteAcademico.dll
+F:\Lab02\SoporteAcademico\obj\Debug\net9.0\SoporteAcademico.pdb
+F:\Lab02\SoporteAcademico\obj\Debug\net9.0\SoporteAcademico.genruntimeconfig.cache
+F:\Lab02\SoporteAcademico\obj\Debug\net9.0\ref\SoporteAcademico.dll
