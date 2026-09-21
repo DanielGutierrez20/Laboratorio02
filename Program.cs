@@ -31,7 +31,7 @@ public class Program
         return entrada;
     }
 
-    //Función tipo de consulta
+    //Función obtener tipo de consulta
     static string ObtenerTipoConsulta()
     {
         while (true)
@@ -51,7 +51,7 @@ public class Program
         }
     }
 
-    //Función prioridad
+    //Función calcular prioridad
     static string CalcularPrioridad(string tipoConsulta)
     {
         if (tipoConsulta == "Pagos" || tipoConsulta == "Matrícula")
@@ -61,7 +61,7 @@ public class Program
         return "Baja";
     }
 
-    //Función resumen
+    //Función mostrar resumen
     static void MostrarResumen(string codigo, string nombre, string tipo, string descripcion, string prioridad)
     {
         Console.WriteLine("---------------------------------------");
@@ -81,8 +81,10 @@ public class Program
         string[] tipos = new string[MAX_SOLICITUDES];
         string[] descripciones = new string[MAX_SOLICITUDES];
         string[] prioridades = new string[MAX_SOLICITUDES];
+
         int totalRegistrados = 0;
         bool continuar = true;
+
         while (continuar)
         {
             MostrarMenu();
