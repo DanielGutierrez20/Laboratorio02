@@ -118,6 +118,18 @@ public class Program
 
                 case "2":
                     Console.WriteLine("\n=== RESUMEN DE TODAS LAS ATENCIONES REGISTRADAS ===");    
+                    if (totalRegistrados == 0)
+                    {
+                        Console.WriteLine("No hay solicitudes registradas aún.");
+                    }
+                    else
+                    {
+                        for (int i = 0; i < totalRegistrados; i++)
+                        {
+                            Console.WriteLine($"\n--- Atención #{i + 1} ---");
+                            MostrarResumen(codigos[i], nombres[i], tipos[i], descripciones[i], prioridades[i]);
+                        }
+                    }
                     break;
 
                 case "3":
