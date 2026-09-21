@@ -30,6 +30,25 @@ public class Program
 
         return entrada;
     }
+
+    //Función tipo de consulta
+    static string ObtenerTipoConsulta()
+    {
+        while (true)
+        {
+            Console.WriteLine("\nSeleccione el tipo de consulta (1.Matrícula, 2.Pagos, 3.Constancia, 4.Plataforma, 5.Otro): ");
+            string op = Console.ReadLine()?.Trim();
+            switch (op)
+            {
+                case "1": return "Matrícula";
+                case "2": return "Pagos";
+                case "3": return "Constancia";
+                case "4": return "Plataforma";
+                case "5": return "Otro";
+                default: Console.WriteLine(" Opción inválida. Intente de nuevo."); break;
+            }
+        }
+    }
 	public static void Main()
 	{
 		//Estructura
@@ -39,7 +58,7 @@ public class Program
         string[] tipos = new string[MAX_SOLICITUDES];
         string[] descripciones = new string[MAX_SOLICITUDES];
         string[] prioridades = new string[MAX_SOLICITUDES];
-        
+
         string codigo = ObtenerTextoValido("Ingrese código de estudiante (mín. 5 caract.): ", 5);
 	}
 }
