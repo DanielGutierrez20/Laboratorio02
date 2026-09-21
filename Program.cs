@@ -1,6 +1,17 @@
 ﻿using System;
 public class Program
 {
+    //FUNCIONES
+    static void MostrarMenu()
+    {
+        Console.WriteLine("=======================================");
+        Console.WriteLine("  SISTEMA DE SOPORTE ACADÉMICO - UPN   ");
+        Console.WriteLine("=======================================");
+        Console.WriteLine("1. Registrar nueva solicitud");
+        Console.WriteLine("2. Mostrar todas las solicitudes");
+        Console.WriteLine("3. Salir");
+        Console.WriteLine("=======================================");
+    }
 	public static void Main()
 	{
 		// COMMIT REQ 1: Estrutura base de datos
