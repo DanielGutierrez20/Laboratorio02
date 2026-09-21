@@ -49,6 +49,17 @@ public class Program
             }
         }
     }
+
+    //Función prioridad
+    static string CalcularPrioridad(string tipoConsulta)
+    {
+        if (tipoConsulta == "Pagos" || tipoConsulta == "Matrícula")
+        {
+            return "Alta";
+        }
+        return "Baja";
+    }
+
 	public static void Main()
 	{
 		//Estructura
