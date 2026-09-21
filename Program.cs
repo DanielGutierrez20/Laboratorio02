@@ -90,6 +90,7 @@ public class Program
             switch (opcion)
             {
                 case "1":
+                    //Control para registrar 3 solicitudes
                     if (totalRegistrados < MAX_SOLICITUDES)
                     {
                         Console.WriteLine($"\n--- REGISTRO DE SOLICITUD N° {totalRegistrados + 1} ---");
