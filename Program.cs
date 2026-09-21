@@ -60,6 +60,17 @@ public class Program
         return "Baja";
     }
 
+    //Función resumen
+    static void MostrarResumen(string codigo, string nombre, string tipo, string descripcion, string prioridad)
+    {
+        Console.WriteLine("---------------------------------------");
+        Console.WriteLine($" CÓDIGO    : {codigo}");
+        Console.WriteLine($" ESTUDIANTE: {nombre}");
+        Console.WriteLine($" TIPO      : {tipo}");
+        Console.WriteLine($" DESCRIPCIÓN: {descripcion}");
+        Console.WriteLine($" PRIORIDAD : {prioridad}");
+        Console.WriteLine("---------------------------------------");
+    }
 	public static void Main()
 	{
 		//Estructura
